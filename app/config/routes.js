@@ -1,11 +1,12 @@
 import React from 'react'
-import { Router, Route, IndexRoute } from 'react-router'
-import Hello from '../components/hello'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import Main from '../components/main'
+import Home from '../components/home'
 
 var routes = (
-  <Router>
-    <Route path='/' component={Hello}>
-      <IndexRoute component={Hello} />
+  <Router history={hashHistory}>
+    <Route path='/' component={Main}>
+      <IndexRoute component={Home} />
     </Route>
   </Router>
 );

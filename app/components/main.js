@@ -3,6 +3,7 @@ import React from 'react'
 
 export default React.createClass({
   render() {
-    return <div>Hi World</div>
+    console.log("bababa");
+    return <div>Hi World {this.props.children} </div>
   }
 })
